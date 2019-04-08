@@ -1,0 +1,226 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.headerTitle{
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 2px solid #ffcc00;
+	width: 450px;
+	padding-top: 110px;
+	position: relative;
+}
+.subTitle{
+	font-size: 18px;
+	letter-spacing: 0.002em;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #898f8f;
+}
+.title{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	color: #ffcc00;
+	text-transform: uppercase;
+	margin: 0 0 54px 0;
+}
+.fireIcon{
+	background: url("../images/iconFire.svg") center center no-repeat, #ffffff;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	bottom: -10px;
+	left: calc(50% - 15px);
+
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	margin-top: 50px;
+
+}
+.grid-width-1-2{
+	padding: 70px 80px;
+}
+.avatar{
+	background: url("../images/avatar.jpg") center center no-repeat;
+	width: 388px;
+	height: 388px;
+	border: 2px solid #ffcc00;
+	position: relative;
+}
+.avatar:before{
+	width: 100px;
+	height: 100px;
+	border-top: 2px solid #ffcc00;
+	border-left: 2px solid #ffcc00;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: -15px;
+	left: -15px;
+}
+.avatar:after{
+	width: 100px;
+	height: 100px;
+	border-bottom: 2px solid #ffcc00;
+	border-left: 2px solid #ffcc00;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	bottom: -15px;
+	left: -15px;
+}
+.avatar > :first-child:before{
+	width: 100px;
+	height: 100px;
+	border-top: 2px solid #ffcc00;
+	border-right: 2px solid #ffcc00;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: -15px;
+	right: -15px;
+}
+.avatar > :first-child:after{
+	width: 100px;
+	height: 100px;
+	border-bottom: 2px solid #ffcc00;
+	border-right: 2px solid #ffcc00;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	bottom: -15px;
+	right: -15px;
+}
+.photo{
+	border-right: 2px solid #ffcc00;
+}
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+.name{
+	font-weight: 900;
+	font-size: 36px;
+	padding-bottom: 35px;
+	letter-spacing: 0.002em;
+	font-family: 'Roboto', sans-serif;
+	color: #666666;
+	background: url("../images/seperator.png") bottom center no-repeat;
+}
+.position{
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	color: #666666;
+}
+.socialIcons .fab{
+	border: 1px solid #cccccc;
+	width: 25px;
+	height: 25px;
+	font-size: 14px;
+	border-radius: 100%;
+	display: inline-block;
+	line-height: 25px;
+	color: #cccccc;
+
+}
+.description{
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 14px;
+	color: #333333;
+}
+.about img{
+	margin: 0 auto;
+	width: 50px;
+}
+.button{
+	width: 120px;
+	height: 25px;
+	background: #ffffff;
+	border: 2px solid #ffcc00;
+	line-height: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #666666;
+	font-weight: 700;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 auto;
+}
+.bullet{
+
+	width: 55px;
+	height: 10px;
+	margin: 0 auto;
+}
+.bullet > div{
+	background: url("../images/bullet.png")center center no-repeat;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+}
